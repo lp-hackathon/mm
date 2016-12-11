@@ -1,3 +1,4 @@
+<br />
 <% @profiles.each do |profile| %>
 	<div class="booyah-box col-xs-10 col-xs-offset-1">
 		<h1><%= link_to profile.first_name, profile_path(profile) %></h1><br />
@@ -5,3 +6,4 @@
 		<p><%= profile.location %></p><br />
   </div>
 <% end %>
+<br />

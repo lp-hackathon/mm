@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   root 'static_pages#index'
 
-  resources :profiles, only: [:index, :show, :create, :destroy, :update]
+  resources :profiles, only: [:index, :new, :show, :create, :destroy, :update]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
