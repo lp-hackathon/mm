@@ -17,10 +17,10 @@ ActiveRecord::Schema.define(version: 20161211013118) do
   enable_extension "plpgsql"
 
   create_table "mentees", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
     t.string   "name"
     t.string   "bio"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "mentors", force: true do |t|
